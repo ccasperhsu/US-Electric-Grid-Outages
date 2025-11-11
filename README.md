@@ -35,12 +35,12 @@ The following categories were defined based on the characteristics of the outage
 ## Key Takeaways
 - 2018, 2019, 2020 were the top 3 years with the largest accumulated demand loss during the 2010-2023 period. Weather is the lead contributor to demand loss during those three years.
 - Of the 1428 outages with known demand loss or number of people affected, weather caused close to 70% of the events.
-- 70% of outages can last anywhere between 1 to 3 days, which can lead to serious consequences for those relying on medical, cooling, or refridgerating devices.
+- 60% of power outages are restored within one day, however, over 28% of outages last between 1 to 3 days, which can lead to serious consequences for those relying on medical, cooling, or refridgerating devices.
 - While physical attacks / vandalism causes about 8% of outages, their total effect on demand loss is only 3.5%. 
 - The records often do not include the number of people affected and/or loss of demand. Different methods of replacing missing values may be implemented to make the analysis more conclusive.
 - The cause of the outage is not often not granular enough, which means external research may be required to fill the information gap. For example, about 65% of records within the "Weather" category only indicates "Severe Weather" in the description column, instead of "Severe Weather - Wildfire" or other types of natural disasters.
 
-While the data collection process could be enhanced to provide more quality data, the direction of the analysis from this EDA project is clear - efforts to reduce carbon must be prioritized to lessen the impacts of climate change, while grid infrastructures must simultaneously be strengthened to withstand worsening weather disasters.
+While the data collection process could be refined to reduce human error and preserve more detail, the direction of the analysis from this EDA project is clear - efforts to reduce carbon and bolster infrastructures must be prioritized to lessen the impacts of climate change on an aging grid.
 
 ## Workflow Overview
 - Preprocessing
