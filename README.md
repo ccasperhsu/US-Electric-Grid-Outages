@@ -9,10 +9,10 @@
 
 
 ## Introduction
-One of the most important roles in the nation is to balance the instantaneous changes of electricity demand with steady supply. What makes this difficult is not only the uncertain load for data centers, but also outages caused by a mixture of natural, manmade events. This exploratory data analysis (EDA) project aims to explore the official outage reporting data from the Department of Energy (DOE). The insights derived from this analysis can benefit not only the government authorities in charge, but also end customers who may take proactive actions towards future outage events.
+One of the most important roles in the nation is to balance the instantaneous changes of electricity demand with steady supply. What makes this difficult is not only the uncertain demand for electricity, especially with the increased contruction of data centers, but also outages caused by a mixture of natural, manmade events. This exploratory data analysis (EDA) project aims to explore the official outage reporting data from the Department of Energy (DOE). The insights derived from this analysis can benefit not only the government authorities in charge, but also end customers who may want to take proactive actions towards future outage events.
 
 ### Background
-There are multiple authorities involved in a major outage, which is an event that affect at least 50,000 customers. The North America Electric Reliability Corporation and its regional entities (RE), which together form the ERO Enterprise, are the main authorities that utilities and Balancing Authorities report to during such an outage event.
+The North America Electric Reliability Corporation and its regional entities (RE), which together form the ERO Enterprise, are the main authorities that utilities and Balancing Authorities report to during an outage event.
 
 *NERC was certified by the Federal Energy Regulatory Commission (FERC) to act as the Electric Reliability Organization (ERO) as designated in the Federal Power Act of 2005. NERC has delegated certain authority to its six Regional Entities to conduct activities such as proposing regional Reliability Standards, engaging in compliance monitoring and enforcement activities, and performing reliability assessments* -- [NERC](https://www.nerc.com/who-we-are/key-players)
 
@@ -27,6 +27,8 @@ There are multiple authorities involved in a major outage, which is an event tha
 The OE-417 Form is used by the DOE to stay updated with current energy crises and can subsequently create policy and infrastructure changes to prevent future outages from occurring. Utilities must either file through the Balancing Authority, such as California Independent System Operator (CAISO), or file independently ([Who Must Submit](https://doe417.pnnl.gov/instructions#:~:text=considered%20electric%20utilities.%29-,Who%20Must%20Submit,-Balancing%20Authorities%20%28BA)). Power outage data based on the OE-417 form from 2021 to 2023 (partial year) was manually downloaded and processed for the purpose of this analysis.
 
 Cleaned data and data definitions can be found in the folder titled “data”.
+
+The following categories were defined based on the characteristics of the outage event recorded. 
 
 
 ## Key Takeaways
