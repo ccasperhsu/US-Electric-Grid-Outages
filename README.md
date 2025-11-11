@@ -14,9 +14,7 @@ The North America Electric Reliability Corporation and its regional entities (RE
 
 *NERC was certified by the Federal Energy Regulatory Commission (FERC) to act as the Electric Reliability Organization (ERO) as designated in the Federal Power Act of 2005. NERC has delegated certain authority to its six Regional Entities to conduct activities such as proposing regional Reliability Standards, engaging in compliance monitoring and enforcement activities, and performing reliability assessments* -- [NERC](https://www.nerc.com/who-we-are/key-players)
 
-#### ERO (Electric Reliability Organization) Enterprise:
-- NERC
-- 6 RE (MRO, NPCC, RF, SERC, Texas RE, WECC)
+#### Six Regional Entities of the Electric Reliability Organization (ERO) Enterprise
 
  <img width="786" height="413" alt="ERO Enterprise" src="https://github.com/user-attachments/assets/b7b1e47e-e972-4b96-92b7-862da01a06dc" />
 
@@ -25,12 +23,13 @@ The North America Electric Reliability Corporation and its regional entities (RE
 The OE-417 Form is used by the DOE to stay updated with current energy crises and can subsequently create policy and infrastructure changes to prevent future outages from occurring. Utilities must either file through the Balancing Authority, such as California Independent System Operator (CAISO), or file independently ([Who Must Submit](https://doe417.pnnl.gov/instructions#:~:text=considered%20electric%20utilities.%29-,Who%20Must%20Submit,-Balancing%20Authorities%20%28BA)). Power outage data based on the OE-417 form from 2021 to 2023 (partial year) was manually downloaded and processed for the purpose of this analysis.
 
 Cleaned data and data definitions can be found in the folder titled “data”. 
-Key data definitions: 
-- Demand Loss
-- 
+- **Key data definitions**: 
+	- Demand Loss: The amount of the peak demand in megawatts (MW) involved over the entire incident.
+	- Event Type: Cause of the incident.
 
-The following categories were defined based on the characteristics of the outage event recorded. 
+A new field, *Category*, was created during the data cleaning stage based on event type and contains the following values.
 
+<img width="750" height="170" alt="image" src="https://github.com/user-attachments/assets/90fb98b7-e93a-48cf-b45b-d1f6c1d45af0" />
 
 ## Key Takeaways
 - 2018, 2019, 2020 were the top 3 years with the largest accumulated demand loss during the 2010-2023 period. Weather is the lead contributor to demand loss during those three years.
