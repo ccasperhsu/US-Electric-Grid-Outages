@@ -24,13 +24,14 @@ There are multiple authorities involved in a major outage, which is an event tha
 
 
 ## Data
-The OE-417 Form is used by the DOE to stay updated with current energy crises and can subsequently create policy and infrastructure changes to prevent future outages from occurring. Utilities must either file through the Balancing Authority, such as California Independent System Operator (CAISO), or file independently ([Who Must Submit](https://doe417.pnnl.gov/instructions#:~:text=considered%20electric%20utilities.%29-,Who%20Must%20Submit,-Balancing%20Authorities%20%28BA)). Power outage data based on the OE-417 form from 2021 to 2023 was manually downloaded and processed for the purpose of this analysis.
+The OE-417 Form is used by the DOE to stay updated with current energy crises and can subsequently create policy and infrastructure changes to prevent future outages from occurring. Utilities must either file through the Balancing Authority, such as California Independent System Operator (CAISO), or file independently ([Who Must Submit](https://doe417.pnnl.gov/instructions#:~:text=considered%20electric%20utilities.%29-,Who%20Must%20Submit,-Balancing%20Authorities%20%28BA)). Power outage data based on the OE-417 form from 2021 to 2023 (partial year) was manually downloaded and processed for the purpose of this analysis.
 
 Cleaned data and data definitions can be found in the folder titled “data”.
 
 
 ## Key Takeaways
-- Weather accounted for 95% of outages in the 160 events examined during this time period, and together account for the largest demand loss. This highlights the importance of reducing carbon and strengthening grid infrastructures for the impacts of climate change.
+- 2018, 2019, 2020 were the top 3 years with the most amount of demand loss during the 2010-2023 period. 
+- Weather accounted for 95% of outages in the 160 events that affected more than 150 people examined during this time period, and together account for the largest demand loss. This highlights the importance of reducing carbon and strengthening grid infrastructures for the impacts of climate change.
 - 70% of outages can last anywhere between 1 to 3 days, which can lead to serious consequences for those relying on medical, cooling, or refridgerating devices.    
 - The records often do not include the number of people affected and/or loss of demand. Different methods of replacing missing values can be implemented to make the analysis more inclusive.
 - The cause of the outage is not often not granular enough. For example, the record indicates the cause as "weather" instead of "weather - wildfire". This reduces the usability of the record. Individual outage event research may be required to fill the knowledge gap.
