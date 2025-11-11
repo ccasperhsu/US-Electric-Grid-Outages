@@ -2,7 +2,6 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-	- [Background](#background)
 - [Data](#data)
 - [Key Takeaways](#key-takeaways)
 - [Workflow Overview](#workflow-overview)
@@ -11,7 +10,6 @@
 ## Introduction
 One of the most important roles in the nation is to balance the instantaneous changes of electricity demand with steady supply. What makes this difficult is not only the uncertain demand for electricity, especially with the increased contruction of data centers, but also outages caused by a mixture of natural, manmade events. This exploratory data analysis (EDA) project aims to explore the official outage reporting data from the Department of Energy (DOE). The insights derived from this analysis can benefit not only the government authorities in charge, but also end customers who may want to take proactive actions towards future outage events.
 
-### Background
 The North America Electric Reliability Corporation and its regional entities (RE), which together form the ERO Enterprise, are the main authorities that utilities and Balancing Authorities report to during an outage event.
 
 *NERC was certified by the Federal Energy Regulatory Commission (FERC) to act as the Electric Reliability Organization (ERO) as designated in the Federal Power Act of 2005. NERC has delegated certain authority to its six Regional Entities to conduct activities such as proposing regional Reliability Standards, engaging in compliance monitoring and enforcement activities, and performing reliability assessments* -- [NERC](https://www.nerc.com/who-we-are/key-players)
@@ -26,17 +24,23 @@ The North America Electric Reliability Corporation and its regional entities (RE
 ## Data
 The OE-417 Form is used by the DOE to stay updated with current energy crises and can subsequently create policy and infrastructure changes to prevent future outages from occurring. Utilities must either file through the Balancing Authority, such as California Independent System Operator (CAISO), or file independently ([Who Must Submit](https://doe417.pnnl.gov/instructions#:~:text=considered%20electric%20utilities.%29-,Who%20Must%20Submit,-Balancing%20Authorities%20%28BA)). Power outage data based on the OE-417 form from 2021 to 2023 (partial year) was manually downloaded and processed for the purpose of this analysis.
 
-Cleaned data and data definitions can be found in the folder titled “data”.
+Cleaned data and data definitions can be found in the folder titled “data”. 
+Key data definitions: 
+- Demand Loss
+- 
 
 The following categories were defined based on the characteristics of the outage event recorded. 
 
 
 ## Key Takeaways
-- 2018, 2019, 2020 were the top 3 years with the most amount of demand loss during the 2010-2023 period. 
-- Weather accounted for 95% of outages in the 160 events that affected more than 150 people examined during this time period, and together account for the largest demand loss. This highlights the importance of reducing carbon and strengthening grid infrastructures for the impacts of climate change.
-- 70% of outages can last anywhere between 1 to 3 days, which can lead to serious consequences for those relying on medical, cooling, or refridgerating devices.    
-- The records often do not include the number of people affected and/or loss of demand. Different methods of replacing missing values can be implemented to make the analysis more inclusive.
-- The cause of the outage is not often not granular enough. For example, the record indicates the cause as "weather" instead of "weather - wildfire". This reduces the usability of the record. Individual outage event research may be required to fill the knowledge gap.
+- 2018, 2019, 2020 were the top 3 years with the largest accumulated demand loss during the 2010-2023 period. Weather is the lead contributor to demand loss during those three years.
+- Of the 1428 outages with known demand loss or number of people affected, weather caused close to 70% of the events.
+- 70% of outages can last anywhere between 1 to 3 days, which can lead to serious consequences for those relying on medical, cooling, or refridgerating devices.
+- While physical attacks / vandalism causes about 8% of outages, their total effect on demand loss is only 3.5%. 
+- The records often do not include the number of people affected and/or loss of demand. Different methods of replacing missing values may be implemented to make the analysis more conclusive.
+- The cause of the outage is not often not granular enough, which means external research may be required to fill the information gap. For example, about 65% of records within the "Weather" category only indicates "Severe Weather" in the description column, instead of "Severe Weather - Wildfire" or other types of natural disasters.
+
+While the data collection process could be enhanced to provide more quality data, the direction of the analysis from this EDA project is clear - efforts to reduce carbon must be prioritized to lessen the impacts of climate change, while grid infrastructures must simultaneously be strengthened to withstand worsening weather disasters.
 
 ## Workflow Overview
 - Preprocessing
