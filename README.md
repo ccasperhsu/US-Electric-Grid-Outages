@@ -46,7 +46,7 @@ While the data collection process could be refined to reduce human error and pre
 	- Standardize data formats to import into the database.
 - Database Data Cleaning
 	- Import Excel export file into MySQL
-	- Handle Null/Missing Values
+	- Handle Null / Missing Values
 	- Remove Duplicates
 	- Create Categorical Variables
 	- Remove Extremities and Incomplete Records
